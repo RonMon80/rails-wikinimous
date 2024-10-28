@@ -1,7 +1,13 @@
-  <%= form_with model: @article do |f| %>
-  <%= f.label "Title" %>
-  <%= f.text_field :title %>
-  <%= f.label "Content" %>
-  <%= f.text_field :content %>
-  <%= f.submit %>
-  <% end %>
+<%= form_with model: @article, local: true do |f| %>
+  <div class="mb-3">
+    <%= f.label :title, class: "form-label" %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :content, class: "form-label" %>
+    <%= f.text_area :content, class: "form-control" %>
+  </div>
+  <div class="d-grid">
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -15,9 +15,9 @@
     <nav class="navbar sticky-top navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand px-3 py-2" href="#">Wikinimous</a>
-        <% if current_page?(controller: 'articles', action: 'index') %>
+        <% if current_page?(root_path) || current_page?(controller: 'articles', action: 'index') %>
           <div class="d-flex">
-            <%= link_to 'New Article', new_article_path, class: 'btn btn-primary ms-auto px-3' %>
+            <%= link_to 'New Article', new_article_path, class: 'btn btn-primary ms-auto px-3 py-2' %>
           </div>
         <% end %>
       </div>
