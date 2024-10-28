@@ -8,6 +8,6 @@
     <%= f.text_area :content, class: "form-control" %>
   </div>
   <div class="d-grid">
-    <%= f.submit "Submit", class: "btn btn-primary" %>
+    <%= f.submit @article.new_record? ? "Create" : "Update", class: "btn btn-primary" %>  
   </div>
 <% end %>
