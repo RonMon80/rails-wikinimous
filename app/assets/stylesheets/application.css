@@ -54,3 +54,32 @@
   line-height: 29px;
   color: rgb(33, 37, 41);
 }
+
+/* app/assets/stylesheets/custom.css */
+
+/* Estilos gerais */
+.navbar-brand {
+  margin-right: auto;
+}
+
+.btn-primary {
+  margin-left: auto;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+  }
+
+  .container.mt-5 {
+    margin-top: 2rem;
+  }
+
+  .text-center.mb-4 {
+    font-size: 1.25rem;
+  }
